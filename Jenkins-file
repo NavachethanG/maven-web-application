@@ -6,6 +6,8 @@ echo "The Node Name is: ${env.NODE_NAME}"
 echo "The Job Name is: ${env.JOB_NAME}"
 echo "The Build number is: ${env.BUILD_NUMBER}"
 
+timestamps {
+}
 //checkout code
 stage('CheckoutCode'){
 git branch: 'development', url: 'https://github.com/NavachethanG/maven-web-application.git'
